@@ -1,0 +1,35 @@
+Source: swmgmt
+Section: metapackages
+Priority: optional
+Maintainer: StarlingX Developers <starlingx-discuss@lists.starlingx.io>
+Build-Depends: debhelper-compat (= 13),
+  build-info
+Standards-Version: 4.5.1
+Homepage: https://www.starlingx.io
+
+Package: swmgmt
+Architecture: all
+Depends:
+  controllerconfig,
+  gir1.2-ostree-1.0,
+  libostree-1-1,
+  nfv-client,
+  nfv-common,
+  nfv-plugins,
+  nfv-tools,
+  nfv-vim,
+  ostree,
+  ostree-boot,
+  ostree-upgrade-mgr,
+  puppet-nfv,
+  puppet-usm,
+  python3-apt-ostree,
+  software,
+  software-client,
+  software-properties-common,
+  vim,
+  vim-common,
+  vim-runtime,
+  vim-tiny
+Description: Software update framework metapackage
+  This metapackage groups binaries responsible for system updates in StarlingX.
