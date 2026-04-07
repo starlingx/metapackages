@@ -1,0 +1,26 @@
+Source: distcloud
+Section: metapackages
+Priority: optional
+Maintainer: StarlingX Developers <starlingx-discuss@lists.starlingx.io>
+Build-Depends: debhelper-compat (= 13),
+  build-info
+Standards-Version: 4.5.1
+Homepage: https://www.starlingx.io
+
+Package: distcloud
+Architecture: all
+Depends:
+  distributedcloud-client-dcmanagerclient,
+  distributedcloud-dcagent,
+  distributedcloud-dccertmon,
+  distributedcloud-dccommon,
+  distributedcloud-dcdbsync,
+  distributedcloud-dcmanager,
+  distributedcloud-dcorch,
+  puppet-dcagent,
+  puppet-dcdbsync,
+  puppet-dcmanager,
+  puppet-dcorch
+Description: Distributed Cloud metapackage
+  This metapackage groups binaries related to supporting the distributed cloud
+  framework in StarlingX

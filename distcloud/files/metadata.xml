@@ -1,0 +1,8 @@
+<metapackage>
+  <!-- Run data migration (Y/N) -->
+  <data_migration>Y</data_migration>
+  <!-- Can be deployed individually (Y) or only as part of product release (N) -->
+  <deployable>Y</deployable>
+  <!-- Installing a new version requires a reboot (Y/N) -->
+  <reboot_required>N</reboot_required>
+</metapackage>
