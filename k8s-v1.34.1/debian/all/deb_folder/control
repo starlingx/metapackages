@@ -1,0 +1,17 @@
+Source: k8s-v1.34.1
+Section: metapackages
+Priority: optional
+Maintainer: StarlingX Developers <starlingx-discuss@lists.starlingx.io>
+Build-Depends: debhelper-compat (= 13),
+  build-info
+Standards-Version: 4.5.1
+Homepage: https://www.starlingx.io
+
+Package: k8s-v1.34.1
+Architecture: all
+Depends:
+  kubernetes-1.34.1-client,
+  kubernetes-1.34.1-kubeadm,
+  kubernetes-1.34.1-node
+Description: Kubernetes 1.34.1 metapackage
+  This metapackage groups binaries associated with Kubernetes 1.34.1 in StarlingX.

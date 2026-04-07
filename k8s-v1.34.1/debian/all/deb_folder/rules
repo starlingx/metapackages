@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+METAPKG_NAME := $(shell dpkg-parsechangelog -S Source)
+METAPKG_VERSION := $(shell . /etc/build.info && echo $$SW_VERSION).0
+
+ROOT := debian/$(METAPKG_NAME)
+TARGET_DIR := $(ROOT)/usr/local/share/metapackages/$(METAPKG_VERSION)/$(METAPKG_NAME)
+
+%:
+	dh $@
+
+override_dh_gencontrol:
+	dh_gencontrol -- -v$(METAPKG_VERSION)
+
+override_dh_auto_install:
+	install -d $(TARGET_DIR)
+	cp -r files/. $(TARGET_DIR)/
+
+override_dh_usrlocal:
+	# Section left empty to allow installing files to /usr/local/
