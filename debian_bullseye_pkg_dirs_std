@@ -1,24 +1,24 @@
 
-# base
-base
+# meta-base
+meta-base
 
-# distcloud
-distcloud
+# meta-distcloud
+meta-distcloud
 
-# infra
-infra
+# meta-infra
+meta-infra
 
-# k8s-common
-k8s-common
+# meta-k8s-common
+meta-k8s-common
 
-# k8s-v1.32.2
-k8s-v1.32.2
+# meta-k8s-v1.32.2
+meta-k8s-v1.32.2
 
-# k8s-v1.33.0
-k8s-v1.33.0
+# meta-k8s-v1.33.0
+meta-k8s-v1.33.0
 
-# k8s-v1.34.1
-k8s-v1.34.1
+# meta-k8s-v1.34.1
+meta-k8s-v1.34.1
 
-# swmgmt
-swmgmt
+# meta-swmgmt
+meta-swmgmt

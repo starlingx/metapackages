@@ -1,0 +1,31 @@
+Source: meta-k8s-common
+Section: metapackages
+Priority: optional
+Maintainer: StarlingX Developers <starlingx-discuss@lists.starlingx.io>
+Build-Depends: debhelper-compat (= 13),
+  build-info
+Standards-Version: 4.5.1
+Homepage: https://www.starlingx.io
+
+Package: meta-k8s-common
+Architecture: all
+Depends:
+  bond-cni,
+  containerd,
+  containerd-config,
+  containernetworking-plugins,
+  isolcpus-device-plugin,
+  k8s-cni-cache-cleanup,
+  k8s-coredump,
+  k8s-pod-recovery,
+  kata-containers,
+  kube-cpusets,
+  kube-memory,
+  kubectl-cert-manager,
+  kubernetes-unversioned,
+  puppet-module-cristifalcas-etcd,
+  python3-kubernetes,
+  runc
+Description: Kubernetes common metapackage
+  This metapackage groups binaries associated with features common between
+  several Kubernetes versions in StarlingX
