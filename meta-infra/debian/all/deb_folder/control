@@ -162,11 +162,6 @@ Depends:
   tsconfig,
   worker-utils,
   workerconfig-standalone,
-  wrcp-deployment-manager,
-  wrcp-deployment-manager-plugins,
-  wrcp-playbook,
-  wrcp-theme,
-  wrs-deployment-manager-helm
 Description: Infrastructure metapackage
   This metapackage groups binaries related to general StarlingX services,
   excluding distributed cloud support and the update framework.
