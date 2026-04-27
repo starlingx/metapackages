@@ -3,7 +3,8 @@ Section: metapackages
 Priority: optional
 Maintainer: StarlingX Developers <starlingx-discuss@lists.starlingx.io>
 Build-Depends: debhelper-compat (= 13),
-  build-info
+  build-info,
+  xmlstarlet
 Standards-Version: 4.5.1
 Homepage: https://www.starlingx.io
 

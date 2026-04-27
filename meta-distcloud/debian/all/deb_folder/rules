@@ -16,6 +16,13 @@ override_dh_gencontrol:
 	dh_gencontrol -- -v$(METAPKG_VERSION)
 
 override_dh_auto_install:
+	# Edit metadata xml
+	xmlstarlet ed --omit-decl --inplace \
+		-s /metapackage -t elem -n id -v "$(METAPKG_NAME_CORE)_$(METAPKG_VERSION)" \
+		-s /metapackage -t elem -n sw_version -v "$(METAPKG_VERSION)" \
+		files/metadata.xml
+
+	# Copy content to TARGET_DIR
 	install -d $(TARGET_DIR)
 	cp -r files/. $(TARGET_DIR)/
 
