@@ -3,8 +3,11 @@
 METAPKG_NAME := $(shell dpkg-parsechangelog -S Source)
 METAPKG_VERSION := $(shell . /etc/build.info && echo $$SW_VERSION).0
 
+# Metapkg name without leading "meta-" prefix
+METAPKG_NAME_CORE := $(METAPKG_NAME:meta-%=%)
+
 ROOT := debian/$(METAPKG_NAME)
-TARGET_DIR := $(ROOT)/usr/local/share/metapackages/$(METAPKG_VERSION)/$(METAPKG_NAME)
+TARGET_DIR := $(ROOT)/usr/local/share/metapackages/$(METAPKG_VERSION)/$(METAPKG_NAME_CORE)
 
 %:
 	dh $@
