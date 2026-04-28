@@ -1,0 +1,5 @@
+meta-k8s-v1.35.2 (1.0-1) unstable; urgency=medium
+
+  * Initial release.
+
+ --  Leonardo Serrano <leonardo.fagundesluzserrano@windriver.com>  Tue, 28 Apr 2026 17:35:12 +0000

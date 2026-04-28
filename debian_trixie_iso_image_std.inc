@@ -20,5 +20,8 @@ meta-k8s-v1.33.0
 # meta-k8s-v1.34.1
 meta-k8s-v1.34.1
 
+# meta-k8s-v1.35.2
+meta-k8s-v1.35.2
+
 # meta-swmgmt
 meta-swmgmt
